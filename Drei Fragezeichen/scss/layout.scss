@@ -1,0 +1,353 @@
+@import "reset";
+
+body {
+    height: fit-content;
+    background-color: black;
+    color: white;
+    font-family: "Arimo", sans-serif;
+}
+header {
+    border-bottom: 2px solid #fff;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    a {
+        .borderAnimation {
+            height: 3px;
+            
+            display: block;
+            transform: scale3d(0, 1, 1);
+            transition: transform 300ms;
+            &.red {
+               background-color:  rgb(192, 33, 33);
+            }
+            &.blue {
+               background-color:  rgb(34, 160, 177);
+            }
+        }
+        &:hover .borderAnimation{
+            transform: scale3d(1, 1, 1);
+
+        }
+    }
+}
+
+.inner {
+    width: 62.5em;
+    margin: 0 auto;
+}
+
+.HomeLogo {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+//  ====HOMEPAGE ========================================
+.ermittler {
+    font-family: "Bebas Neue", cursive;
+    display: flex;
+    height: 50em;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: 0 2em;
+        border-radius: 50%;
+        text-align: center;
+
+        span {
+            font-size: 27rem;
+            transform: scale(1);
+            transition: transform 200ms;
+        }
+        // === Names coming out of ? =====================================
+        h4 {
+            font-family: "Gloria Hallelujah", cursive;
+            font-size: 2em;
+            transform: translate3d(-5%, -4em, 0) scale3d(0.1, 0.1, 0.1);
+            transition: 800ms transform;
+        }
+        h3 {
+            font-family: "Gloria Hallelujah", cursive;
+            font-size: 1.2em;
+            padding-top: 0.3em;
+            transform: translate3d(-5%, -8em, 0) scale3d(0.1, 0.1, 0.1);
+            transition: 800ms transform;
+        }
+
+        &:hover {
+            span {
+                transform: scale(1.1);
+                font-weight: 700;
+            }
+            h4,
+            h3 {
+                transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            }
+        }
+    }
+}
+
+.red {
+    color: rgb(192, 33, 33);
+}
+.blue {
+    color: rgb(34, 160, 177);
+}
+// ===Profile ====================================================
+
+.profile {
+    padding-top: 8rem;
+    ul {
+        padding-left: 1.5em;
+    }
+    li {
+        list-style-type: disc;
+    }
+    .profilepic {
+        position: fixed;
+        animation: fadeIn 3s forwards;
+        animation-delay: 600ms;
+        opacity: 0;
+    }
+}
+.infotext {
+    padding-left: 20em;
+    animation: fadeIn 1.8s;
+
+    .profileheader {
+        display: table;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 2em;
+        margin: 0.5em 0;
+    }
+    h3 {
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 1.2em;
+        margin: 1.2em 0;
+    }
+
+    p {
+        margin-bottom: 1em;
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+    ul {
+        line-height: 1.5;
+        font-size: 1em;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//  --> Qick access to profile pages on profile pages
+.quickFragezeichen {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+
+    a {
+        font-family: "Bebas Neue", cursive;
+        font-size: 10em;
+    }
+}
+
+// === Our Promise =====================================================
+.Promise {
+    animation: fadeIn 1.8s;
+    h1 {
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 2em;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    .ourPromise {
+        p {
+            font-size: 1.2em;
+            line-height: 1.9;
+            padding-top: 1em;
+            // text-align: center;
+        }
+    }
+}
+.signatures {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 3em 2em;
+    animation: fadeIn 3s forwards;
+    animation-delay: 600ms;
+    opacity: 0;
+}
+
+// ===Solved cases - Reviews ================================================
+
+.SolvedCases {
+    overflow: hidden;
+    animation: fadeIn 1.8s;
+
+    h1 {
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 2em;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+}
+
+.Review {
+    margin-top: 2em;
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: center;
+    animation: slideAcross 30s linear infinite;
+    transform: translate3d(150%, 0, 0);
+    opacity: 0;
+    &:nth-of-type(even) {
+        animation: slideAcross 30s linear reverse infinite;
+        transform: translate3d(-150%, 0, 0);
+    }
+    &:nth-of-type(1) {
+        animation-delay: 1.4s;
+        animation-duration: 27s;
+    }
+    &:nth-of-type(2) {
+        animation-delay: 4s;
+        animation-duration: 26s;
+    }
+    &:nth-of-type(3) {
+        animation-delay: 5.2ms;
+        animation-duration: 46s;
+    }
+    &:nth-of-type(4) {
+        animation-delay: 7s;
+        animation-duration: 32s;
+    }
+    .red {
+        font-family: "Gloria Hallelujah", cursive;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .blue {
+        font-family: "Gloria Hallelujah", cursive;
+        text-align: center;
+        font-size: 1.3em;
+    }
+}
+@keyframes slideAcross {
+    0% {
+        transform: translate3d(150%, 0, 0);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(-150%, 0, 0);
+        opacity: 0;
+    }
+}
+.Review:hover {
+    animation-play-state: paused;
+}
+// === Kontaktformular ===================================================
+
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    animation: fadeIn 1.8s;
+}
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.UnsereAdresse {
+    animation: fadeIn 1.8s forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+    h3 {
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 1.5em;
+        margin-top: 1.8em;
+        margin-bottom: 1em;
+        color: rgb(34, 160, 177);
+    }
+    p {
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.2em;
+    }
+    .kommunikation {
+        padding-top: 2.3em;
+        padding-bottom: 1em;
+        font-family: "Gloria Hallelujah", cursive;
+        color: rgb(192, 33, 33);
+        font-size: 1.5em;
+    }
+}
+.contact-box {
+    animation: fadeIn 1.8s forwards;
+    opacity: 0;
+    animation-delay: 900ms;
+    box-sizing: border-box;
+    margin-left: auto;
+    width: 25em;
+
+    div {
+        margin-top: 1.8em;
+        font-size: 1.2em;
+    }
+    input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        font-family: "Arimo", sans-serif;
+    }
+    button {
+        animation: fadeIn 1.8s forwards;
+        opacity: 0;
+        animation-delay: 1.3s;
+        margin-top: 2em;
+        margin-left: auto;
+        background-color: white;
+        font-family: "Gloria Hallelujah", cursive;
+        font-size: 2em;
+        border-radius: 15%;
+        background-color: rgb(192, 33, 33);
+        color: white;
+        transition: 400ms;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(34, 160, 177);
+        }
+    }
+}

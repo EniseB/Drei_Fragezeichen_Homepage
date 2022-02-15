@@ -1,0 +1,633 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+input,
+textarea,
+select,
+button,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+select {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 386.257 386.257' style='enable-background:new 0 0 386.257 386.257;' xml:space='preserve'%3E%3Cpolygon points='0,96.879 193.129,289.379 386.257,96.879 '/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E") no-repeat 95% 50%;
+  background-size: 1em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+picture,
+img {
+  max-width: 100%;
+  height: auto;
+  line-height: 0;
+  display: block;
+}
+
+body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  font-family: "Arimo", sans-serif;
+}
+
+header {
+  border-bottom: 2px solid #fff;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+header a .borderAnimation {
+  height: 3px;
+  display: block;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+header a .borderAnimation.red {
+  background-color: #c02121;
+}
+
+header a .borderAnimation.blue {
+  background-color: #22a0b1;
+}
+
+header a:hover .borderAnimation {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.inner {
+  width: 62.5em;
+  margin: 0 auto;
+}
+
+.HomeLogo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ermittler {
+  font-family: "Bebas Neue", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ermittler a {
+  margin: 0 2em;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.ermittler a span {
+  font-size: 27rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.ermittler a h4 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  -webkit-transform: translate3d(-5%, -4em, 0) scale3d(0.1, 0.1, 0.1);
+          transform: translate3d(-5%, -4em, 0) scale3d(0.1, 0.1, 0.1);
+  -webkit-transition: 800ms -webkit-transform;
+  transition: 800ms -webkit-transform;
+  transition: 800ms transform;
+  transition: 800ms transform, 800ms -webkit-transform;
+}
+
+.ermittler a h3 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.2em;
+  padding-top: 0.3em;
+  -webkit-transform: translate3d(-5%, -8em, 0) scale3d(0.1, 0.1, 0.1);
+          transform: translate3d(-5%, -8em, 0) scale3d(0.1, 0.1, 0.1);
+  -webkit-transition: 800ms -webkit-transform;
+  transition: 800ms -webkit-transform;
+  transition: 800ms transform;
+  transition: 800ms transform, 800ms -webkit-transform;
+}
+
+.ermittler a:hover span {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: 700;
+}
+
+.ermittler a:hover h4,
+.ermittler a:hover h3 {
+  -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
+
+.red {
+  color: #c02121;
+}
+
+.blue {
+  color: #22a0b1;
+}
+
+.profile {
+  padding-top: 8rem;
+}
+
+.profile ul {
+  padding-left: 1.5em;
+}
+
+.profile li {
+  list-style-type: disc;
+}
+
+.profile .profilepic {
+  position: fixed;
+  -webkit-animation: fadeIn 3s forwards;
+          animation: fadeIn 3s forwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  opacity: 0;
+}
+
+.infotext {
+  padding-left: 20em;
+  -webkit-animation: fadeIn 1.8s;
+          animation: fadeIn 1.8s;
+}
+
+.infotext .profileheader {
+  display: table;
+  margin-right: auto;
+  text-align: center;
+}
+
+.infotext h2 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.infotext h3 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.2em;
+  margin: 1.2em 0;
+}
+
+.infotext p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.infotext ul {
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.quickFragezeichen {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.quickFragezeichen a {
+  font-family: "Bebas Neue", cursive;
+  font-size: 10em;
+}
+
+.Promise {
+  -webkit-animation: fadeIn 1.8s;
+          animation: fadeIn 1.8s;
+}
+
+.Promise h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.Promise .ourPromise p {
+  font-size: 1.2em;
+  line-height: 1.9;
+  padding-top: 1em;
+}
+
+.signatures {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 3em 2em;
+  -webkit-animation: fadeIn 3s forwards;
+          animation: fadeIn 3s forwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  opacity: 0;
+}
+
+.SolvedCases {
+  overflow: hidden;
+  -webkit-animation: fadeIn 1.8s;
+          animation: fadeIn 1.8s;
+}
+
+.SolvedCases h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.Review {
+  margin-top: 2em;
+  line-height: 1.5;
+  font-size: 1.2em;
+  text-align: center;
+  -webkit-animation: slideAcross 30s linear infinite;
+          animation: slideAcross 30s linear infinite;
+  -webkit-transform: translate3d(150%, 0, 0);
+          transform: translate3d(150%, 0, 0);
+  opacity: 0;
+}
+
+.Review:nth-of-type(even) {
+  animation: slideAcross 30s linear reverse infinite;
+  -webkit-transform: translate3d(-150%, 0, 0);
+          transform: translate3d(-150%, 0, 0);
+}
+
+.Review:nth-of-type(1) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-duration: 27s;
+          animation-duration: 27s;
+}
+
+.Review:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+}
+
+.Review:nth-of-type(3) {
+  -webkit-animation-delay: 5.2ms;
+          animation-delay: 5.2ms;
+  -webkit-animation-duration: 46s;
+          animation-duration: 46s;
+}
+
+.Review:nth-of-type(4) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-duration: 32s;
+          animation-duration: 32s;
+}
+
+.Review .red {
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.Review .blue {
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+@-webkit-keyframes slideAcross {
+  0% {
+    -webkit-transform: translate3d(150%, 0, 0);
+            transform: translate3d(150%, 0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(-150%, 0, 0);
+            transform: translate3d(-150%, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes slideAcross {
+  0% {
+    -webkit-transform: translate3d(150%, 0, 0);
+            transform: translate3d(150%, 0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(-150%, 0, 0);
+            transform: translate3d(-150%, 0, 0);
+    opacity: 0;
+  }
+}
+
+.Review:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  -webkit-animation: fadeIn 1.8s;
+          animation: fadeIn 1.8s;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.UnsereAdresse {
+  -webkit-animation: fadeIn 1.8s forwards;
+          animation: fadeIn 1.8s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.UnsereAdresse h3 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.5em;
+  margin-top: 1.8em;
+  margin-bottom: 1em;
+  color: #22a0b1;
+}
+
+.UnsereAdresse p {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+.UnsereAdresse .kommunikation {
+  padding-top: 2.3em;
+  padding-bottom: 1em;
+  font-family: "Gloria Hallelujah", cursive;
+  color: #c02121;
+  font-size: 1.5em;
+}
+
+.contact-box {
+  -webkit-animation: fadeIn 1.8s forwards;
+          animation: fadeIn 1.8s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  width: 25em;
+}
+
+.contact-box div {
+  margin-top: 1.8em;
+  font-size: 1.2em;
+}
+
+.contact-box input {
+  width: 100%;
+}
+
+.contact-box textarea {
+  width: 100%;
+  font-family: "Arimo", sans-serif;
+}
+
+.contact-box button {
+  -webkit-animation: fadeIn 1.8s forwards;
+          animation: fadeIn 1.8s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  margin-top: 2em;
+  margin-left: auto;
+  background-color: white;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+  border-radius: 15%;
+  background-color: #c02121;
+  color: white;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.contact-box button:hover {
+  background-color: #22a0b1;
+}
+/*# sourceMappingURL=layout.css.map */
